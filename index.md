@@ -111,7 +111,7 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
-
+```
 int photocellPin = 0;     
 int photocellReading;    
 int LEDpin = 11;          
@@ -137,6 +137,7 @@ void loop(void) {
   
   delay(100);
 }
+
 ```
 
 # Bill of Materials
