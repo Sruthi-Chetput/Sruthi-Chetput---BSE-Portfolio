@@ -15,7 +15,7 @@ Anything between these symbols will not render on the published site -->
 
 <!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**-->
 
-<!---Insert Image of Myself-->
+<img src="sruthiREAL.jpeg" alt="Photograph of Sruthi, Super Smart and Really Cool Engineer" width="300" height="300">
   
 <!---# Final Milestone
 
