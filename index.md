@@ -105,7 +105,7 @@ One of the best parts about Github is that you can view how other people set up 
   
   I wanted to program the LED to only light up when your finger touches the photosensor. To do this, I got the average value of the photocell when your finger is touching it. Then I created a condition. Only when the photocell reading is less than average value of the photocell reading, the LED will light up.
 
-<img src="light_photocell-diagram.png" alt="Diagram of a photocell with labels." width="300" height="400">
+<img src="light_photocell-diagram.png" alt="Diagram of a photocell with labels." width="300" height="300">
 
 <!---# Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. -->
