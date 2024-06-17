@@ -53,9 +53,9 @@ For your second milestone, explain what you've worked on since your previous mil
   Hi, I am Sruthi. I completed the first Milestone of my Main Project, The Fall Detector. My main project requires using Edge Impulse to creare a machine learning model. Edge impulse is an online platform where users can create and deplot their own machine learning models. My first milestone was to use the Arduino Nano 33 BLE Sensor to detect a fall. 
   
   My model and 2 classes, Fall and Stand. The model works by having the user drop/or not drop the arduino senser. If the user drops the arduino sensor, the model is able to accurately predict that a fall as occurred ussing the accelerometes on 3 axes of the sensor. If the user does not drop the arduino sensor, the model is also able to accurately predict that a fall as not occurred. 
+ 
+  I first created an impulse on edge impulse(**See Figure 1**). The window size is the size od the data that will be processed per class, in milliseconds. The window increase is used when a sample is larger than the window size. If this is the case, the window increase is used to go over that sample. I also have 3 accelerometer axes in my model, which help detect falls. Then I classify these spectral features to have to outputs, Fall and Stand.
   
-	I first created an impulse on edge impulse(**See Figure 1**). The window size is the size od the data that will be processed per class, in milliseconds. The window increase is used when a sample is larger than the window size. If this is the case, the window increase is used to go over that sample. I also have 3 accelerometer axes in my model, which help detect falls. Then I classify these spectral features to have to outputs, Fall and Stand.
-
   Then I wanted my model to train 50 times with a learning rate of 0.0005. I also adjusted my validation set size to be 20%.  Then I started training my model. It was able identify all Stands correctly. It also identified most Falls correctly. It only identified very few Falls as Stands(**See Figure 2**). 
 
   Then I exported my model by Building my firmware and selecting Arduni Nano 33 BLE sensor as my board.. This will export the impulse, and build a binary that will run on your development board in a single step. Then I flashed the software and testing my Fall Detector(**See Figure 3**).
