@@ -67,8 +67,6 @@ Figure 1 - Creating an impulse.
 <img src="Validation_Set_of_Fall_Data.jpeg" alt="Figure 2 - Validation Set of Fall Data." width="600" height="350">
 Figure 2 - Validation Set of Fall Data.
 
-
-
 <img src="Fall_Detector_Tested_IRT.jpeg" alt="Figure 3 - Fall Detector Tested in Real Time." width="350" height="600">
 Figure 3 - Fall Detector Tested in Real Time.
 
