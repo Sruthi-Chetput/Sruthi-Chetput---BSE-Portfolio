@@ -91,9 +91,13 @@ One of the best parts about Github is that you can view how other people set up 
   In my project, I wanted to light an external LED using the photocell. To do this, I connected one end of the resistor to the digital pin correspondent to the LED_BUILTIN constant. Then, I connected the positive(longer) leg of the LED to the other end of the resistor. I also connected the negative(shorter) leg of the LED to the GND(**See Figure 2**).
   
   I wanted to program the LED to only light up when your finger touches the photosensor. To do this, I got the average value of the photocell when your finger is touching it. Then I created a condition. Only when the photocell reading is less than average value of the photocell reading, the LED will light up.
+  
 # Schematics
 <img src="light_photocell-diagram.png" alt="Figure 1 - Diagram of a photocell with labels." width="350" height="300">
 Figure 1 - Parts of a Photocell.
+
+<img src="Circut_of_LED_conection.png" alt="Figure 2 - Diagram of a circut with LED connection." width="350" height="300">
+Figure 2 - Circut of an LED connection.
 
 
 # Code
