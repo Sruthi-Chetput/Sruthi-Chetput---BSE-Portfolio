@@ -61,7 +61,7 @@ For your second milestone, explain what you've worked on since your previous mil
   Then I exported my model by Building my firmware and selecting Arduni Nano 33 BLE sensor as my board.. This will export the impulse, and build a binary that will run on your development board in a single step. Then I flashed the software and testing my Fall Detector(**See Figure 3**).
 
 # Schematics 
-<img src="Impulse.jpeg" alt="Figure 1 - Creating an impulse." width="600" height="350">
+<img src="Impulse.jpeg" alt="Figure 1 - Creating an impulse." width="650" height="350">
 Figure 1 - Creating an impulse.
 
 <img src="Validation_Set_of_Fall_Data.jpeg" alt="Figure 2 - Validation Set of Fall Data." width="600" height="350">
