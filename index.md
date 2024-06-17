@@ -93,10 +93,10 @@ One of the best parts about Github is that you can view how other people set up 
   I wanted to program the LED to only light up when your finger touches the photosensor. To do this, I got the average value of the photocell when your finger is touching it. Then I created a condition. Only when the photocell reading is less than average value of the photocell reading, the LED will light up.
   
 # Schematics
-<img src="light_photocell-diagram.png" alt="Figure 1 - Diagram of a photocell with labels." width="350" height="300">
+<img src="light_photocell-diagram.png" alt="Figure 1 - Diagram of a photocell with labels." width="450" height="300">
 Figure 1 - Parts of a Photocell.
 
-<img src="Circut_of_LED_connection.png" alt="Figure 2 - Diagram of a circut with LED connection." width="350" height="300">
+<img src="Circut_of_LED_connection.png" alt="Figure 2 - Diagram of a circut with LED connection." width="450" height="300">
 Figure 2 - Circut of an LED connection.
 
 
