@@ -62,12 +62,15 @@ For your second milestone, explain what you've worked on since your previous mil
 
 # Schematics 
 <img src="Impulse.jpeg" alt="Figure 1 - Creating an impulse." width="650" height="350">
+
 Figure 1 - Creating an impulse.
 
 <img src="Validation_Set_of_Fall_Data.jpeg" alt="Figure 2 - Validation Set of Fall Data." width="600" height="350">
+
 Figure 2 - Validation Set of Fall Data.
 
 <img src="Fall_Detector_Tested_IRT.jpeg" alt="Figure 3 - Fall Detector Tested in Real Time." width="350" height="600">
+
 Figure 3 - Fall Detector Tested in Real Time.
 
 <!--
@@ -94,9 +97,11 @@ One of the best parts about Github is that you can view how other people set up 
   
 # Schematics
 <img src="light_photocell-diagram.png" alt="Figure 1 - Diagram of a photocell with labels." width="450" height="300">
+
 Figure 1 - Parts of a Photocell.
 
 <img src="Circut_of_LED_connection.png" alt="Figure 2 - Diagram of a circut with LED connection." width="550" height="300">
+
 Figure 2 - Circut of an LED connection.
 
 
