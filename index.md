@@ -55,9 +55,9 @@ For your second milestone, explain what you've worked on since your previous mil
   Before flashing the software, I had to use cd and ls commands to navigate to the correct folder which contained the software to flash. Then I had to put sudo in front of the command before running the software for it to run properly. Once it was flashing the software properly, I was finally able to run edge-impulse-run-impulse.
 
 # Schematics 
-<img src="Impulse.jpeg" alt="Figure 1 - Creating an impulse with the workflow… 1.Collecting Data ;2.Preprocessing the data; 3.Designing the Neural Network 4.Training the model." width="650" height="350">
+<img src="Impulse.jpeg" alt="Figure 1 - Creating an impulse with the workflow… 1.Collecting Data; 2.Preprocessing the data; 3.Designing the Neural Network; 4.Training the model." width="650" height="350">
 
-Figure 1 - Creating an impulse with the workflow… 1.Collecting Data ;2.Preprocessing the data; 3.Designing the Neural Network 4.Training the model.
+Figure 1 - Creating an impulse with the workflow… 1.Collecting Data; 2.Preprocessing the data; 3.Designing the Neural Network; 4.Training the model.
 
 <img src="Validation_Set_of_Fall_Data.jpeg" alt="Figure 2 - Validation Set of Fall Data." width="600" height="350">
 
