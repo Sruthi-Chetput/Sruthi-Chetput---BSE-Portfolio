@@ -42,20 +42,22 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7f9FMkugbJ4?si=5AjQr96oZtKGsjZm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  Hi, I am Sruthi. I completed the first Milestone of my Main Project, The Fall Detector. My main project requires using Edge Impulse to creare a machine learning model. Edge impulse is an online platform where users can create and deploy their own machine learning model(s). My first milestone was to use the Arduino Nano 33 BLE Sensor to detect a fall. 
+  I completed the first Milestone of my Main Project, The Fall Detector. My main project requires using Edge Impulse to create a machine learning model. Edge impulse is an online platform where users can create and deplot their own machine learning model(s). My first milestone was to use the Arduino Nano 33 BLE Sensor to detect a simulated fall.
   
-  My model has 2 classes, Fall and Stand. The model works by having the user drop or not drop the arduino senser. If the user drops the arduino sensor, the model is able to accurately predict that a fall as occurred using the accelerometers on the 3 axes of the sensor. If the user does not drop the arduino sensor, the model is also able to accurately detect that a fall as not occurred. 
+  My model has 2 classes, Fall and Stand. The model works by having the user drop or not drop the arduino senser. If the user drops the Arduino sensor, the model is able to accurately predict that a fall has occurred ussing the accelerometers, a device used to measure the acceleration of an object, on the 3 axes of the sensor. If the user does not drop the Arduino sensor, the model is also able to accurately detect that a fall has not occurred.
  
-  I first created an impulse on edge impulse(**See Figure 1**). The window size is the size of the data that will be processed per class. The window increase is used when a sample is larger than the window size. If this is the case, the window increase is used to go over that sample. I also have 3 accelerometer axes in my model, which help detect falls. Then I classify these spectral features to have two outputs, Fall and Stand.
+  I first created an impulse on edge impulse(**See Figure 1**). The window size is the size od the data that will be processed per class. The window increase is used when a sample is larger than the window size. If this is the case, the window increase is used to go over that sample. I also have 3 accelerometer axes in my model, which help detect falls. Then I classify these spectral features to have to outputs, Fall and Stand.
   
-  Then I wanted my model to train 50 times with a learning rate of 0.0005. I also adjusted my validation set size to be 20%. Then I started training my model. It was able identify all Stands correctly. It also identified most Falls correctly. It only identified very few Falls as Stands(**See Figure 2**). 
+  I wanted my model to train 50 epochs with a learning rate of 0.0005. I also adjusted my validation set size to be 20%.  Then I started training my model. It was able identify all Stands correctly. It also identified most Falls correctly. It only identified very few Falls as Stands(**See Figure 2**).  
 
-  Then I exported my model by Building my firmware and selecting Arduni Nano 33 BLE sensor as my board. This will export the impulse, and build a binary that will run on my development board in a single step. Then I flashed the software and testing my Fall Detector(**See Figure 3**).
+  Then I exported my model by Building my firmware and selecting Arduni Nano 33 BLE Microcontroller as my board. This will export the impulse, and build a binary that will run on your development board in a single step. Then I flashed the software and testing my Fall Detector(**See Figure 3**).
+  
+  Before flashing the software, I had to use cd and ls commands to navigate to the correct folder which contained the software to flash. Then I had to put sudo in front of the command before running the software for it to run properly. Once it was flashing the software properly, I was finally able to run edge-impulse-run-impulse.
 
 # Schematics 
-<img src="Impulse.jpeg" alt="Figure 1 - Creating an impulse." width="650" height="350">
+<img src="Impulse.jpeg" alt="Figure 1 - Creating an impulse with the workflow… 1.Collecting Data ;2.Preprocessing the data; 3.Designing the Neural Network 4.Training the model." width="650" height="350">
 
-Figure 1 - Creating an impulse.
+Figure 1 - Creating an impulse with the workflow… 1.Collecting Data ;2.Preprocessing the data; 3.Designing the Neural Network 4.Training the model.
 
 <img src="Validation_Set_of_Fall_Data.jpeg" alt="Figure 2 - Validation Set of Fall Data." width="600" height="350">
 
