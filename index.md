@@ -4,16 +4,11 @@ The fall detector has a small TinyML, a machine learning device in charge of det
 <!---
 [Edit the paragraph above to make it better with this prompt] Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
-```HTML 
-This is an HTML comment in Markdown
-Anything between these symbols will not render on the published site -->
+You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions-->
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Sruthi C | Lynbrook High School | Engineering | Incoming Sophomore
-
-<!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**-->
 
 <img src="sruthiREAL.jpeg" alt="Photograph of Sruthi, Super Smart and Really Cool Engineer!" width="300" height="400">
   
