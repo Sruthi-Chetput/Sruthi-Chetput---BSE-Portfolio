@@ -63,11 +63,11 @@ Figure 1 - Creating an impulse with the workflow… 1.Collecting Data; 2.Preproc
 
 Figure 2 - Neural Network Overview, (Left) Fully connected Neural Net, (Right) Hyperparameter Settings.
 
-<img src="Validation_Set_of_Fall_Data.jpeg" alt="Figure 3 - Validation Set of Fall Data." width="600" height="350">
+<img src="Validation_Set_of_Fall_Data.jpeg" alt="Figure 3 - Validation Set of Fall Data." width="800" height="350">
 
 Figure 3 - Validation Set of Fall Data.
 
-<img src="Stand-versus-Fall.png" alt="Figure 4 - Stand versus Fall Data (Scaled Differently)" width="600" height="350">
+<img src="Stand-versus-Fall.png" alt="Figure 4 - Stand versus Fall Data (Scaled Differently)" width="800" height="350">
 
 Figure 4 - Stand versus Fall Data (Scaled Differently)
 
