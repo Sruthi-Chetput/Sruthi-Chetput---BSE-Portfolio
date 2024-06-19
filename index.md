@@ -5,7 +5,6 @@ The fall detector has a small TinyML, a machine learning device in charge of det
 [Edit the paragraph above to make it better with this prompt] Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions-->
-
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Sruthi C | Lynbrook High School | Engineering | Incoming Sophomore
@@ -64,14 +63,10 @@ Figure 3 - Validation Set of Fall Data.
 
 <img src="Stand-versus-Fall.png" alt="Figure 4 - Stand(Right) versus Fall(Left) Data (Scaled Differently)" width="800" height="350">
 
-Figure 4 - Stand versus Fall Data (Scaled Differently)
+Figure 4 - Stand(Scaled from -60 to 60)  versus Fall Data(Scaled from -2000 to 2000 with a lot of movement in gyrX, gyrY, and gryZ).
 
   Then I exported my model by building my firmware and selecting Arduino Nano 33 BLE Microcontroller as my board. This will export the impulse, and build a binary that will run on your development board in a single step. Then I flashed the software and tested my Fall Detector(**See Figure 5**).
-
-<!---
-<img src="Fall_Detector_Tested_IRT.jpeg" alt="Figure 5 - Fall Detector Tested in Real Time." width="350" height="600">
--->
-```
+````collapse`
 Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
 #Classification results:
     Fall: 0.007813
