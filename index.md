@@ -38,7 +38,7 @@ For your second milestone, explain what you've worked on since your previous mil
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone 
 -->
-# First Milestone with Schematics
+# First Milestone:Machine Learning Prediction of Simulated Falls with Schematics
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7f9FMkugbJ4?si=5AjQr96oZtKGsjZm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -54,7 +54,7 @@ Figure 1 - Creating an impulse with the workflow… 1.Collecting Data; 2.Preproc
   
   I wanted my model to train 50 epochs(one complete pass of the training dataset through the algorithm)with a learning rate(determines the speed at which a model is able to reach its optimal accuracy) of 0.0005. I also adjusted my validation set size to be 20%(**Figure 2**). Then I started training my model. It was able to identify all Stands correctly. It also identified most Falls correctly. It only identified very few Falls as Stands (**See Figure 3 and 4**).  
 
-<img src="Nueral-Network-Overview.jpg" alt="Figure 2 - Neural Network Overview, (Left) Fully connected Neural Net, (Right) Hyperparameter Settings." width="600" height="350">
+<img src="Nueral-Network-Overview.jpg" alt="Figure 2 - Neural Network Overview, (Left) Fully connected Neural Net, (Right) Hyperparameter Settings." width="800" height="350">
 
 Figure 2 - Neural Network Overview, (Left) Fully connected Neural Net, (Right) Hyperparameter Settings.
 
