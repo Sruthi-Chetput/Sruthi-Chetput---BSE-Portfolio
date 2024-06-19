@@ -48,7 +48,7 @@ For your second milestone, explain what you've worked on since your previous mil
  
   I first created an impulse on edge impulse(**See Figure 1**). The window size is the size of the data that will be processed per class. The window increase is used when a sample is larger than the window size. If this is the case, the window increase is used to go over that sample. An example is if I collected a 10 second stream but my window size is one second, then the data would be split into ten one second samples. Then I classify these spectral features to have two outputs, Fall and Stand.
   
-<img src="Impulse.jpeg" alt="Figure 1 - Creating an impulse with the workflow… 1.Collecting Data; 2.Preprocessing the data; 3.Designing the Neural Network; 4.Training the model." width="650" height="350">
+<img src="Impulse.jpeg" alt="Figure 1 - Creating an impulse with the workflow… 1.Collecting Data; 2.Preprocessing the data; 3.Designing the Neural Network; 4.Training the model." width="800" height="350">
 
 Figure 1 - Creating an impulse with the workflow… 1.Collecting Data; 2.Preprocessing the data; 3.Designing the Neural Network; 4.Training the model.
   
@@ -208,66 +208,6 @@ Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.):
 #Classification results:
     Fall: 0.828125
     Stand: 0.171875
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 52 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.500000
-    Stand: 0.500000
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.339844
-    Stand: 0.660156
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 52 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.246094
-    Stand: 0.753906
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 52 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.011719
-    Stand: 0.988281
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.976562
-    Stand: 0.023437
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.000000
-    Stand: 0.996094
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.078125
-    Stand: 0.921875
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.000000
-    Stand: 0.996094
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.000000
-    Stand: 0.996094
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.957031
-    Stand: 0.042969
 ```
 
 Figure 5 - Fall Detector Tested in Real Time.
