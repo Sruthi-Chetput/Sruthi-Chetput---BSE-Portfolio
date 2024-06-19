@@ -66,7 +66,7 @@ Figure 3 - Validation Set of Fall Data.
 Figure 4 - Stand(Scaled from -60 to 60)  versus Fall Data(Scaled from -2000 to 2000 with a lot of movement in gyrX, gyrY, and gryZ).
 
   Then I exported my model by building my firmware and selecting Arduino Nano 33 BLE Microcontroller as my board. This will export the impulse, and build a binary that will run on your development board in a single step. Then I flashed the software and tested my Fall Detector(**See Figure 5**).
-````collapse`
+```
 Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
 #Classification results:
     Fall: 0.007813
@@ -173,36 +173,6 @@ Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.):
 #Classification results:
     Fall: 0.042969
     Stand: 0.957031
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.050781
-    Stand: 0.949219
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.554687
-    Stand: 0.445312
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.609375
-    Stand: 0.390625
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.003906
-    Stand: 0.996094
-Starting inferencing in 2 seconds...
-Sampling...
-Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
-#Classification results:
-    Fall: 0.828125
-    Stand: 0.171875
 ```
 
 Figure 5 - Fall Detector Tested in Real Time.
