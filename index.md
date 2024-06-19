@@ -55,21 +55,21 @@ Figure 1 - Creating an impulse with the workflow… 1.Collecting Data; 2.Preproc
 
 <img width="430" alt="Screenshot 2024-06-19 at 10 17 23 AM" src="https://github.com/Sruthi-Chetput/Sruthi-Chetput---BSE-Portfolio/assets/172335693/934e95b9-279a-4664-b5c9-e751eb901749">.
 
-Figure 2 - Learning Rate
+Figure 2 - Effect of Learning Rate; Reference: Deep Learning by Subir Varma and Sanjiv Das
 
 <img src="Nueral-Network-Overview.jpg" alt="Figure 3 - Neural Network Overview, (Left) Fully connected Neural Net, (Right) Hyperparameter Settings." width="800" height="350">
 
-Figure 3 - Neural Network Overview, (Left) Fully connected Neural Net, (Right) Hyperparameter Settings.
+Figure 3 - Neural Network Overview, (Left) my Fully connected Neural Net, (Right) Hyperparameter Settings.
 
-<img src="Validation_Set_of_Fall_Data.jpeg" alt="Figure 4 - Validation Set of Fall Data." width="800" height="350">
+<img src="Validation_Set_of_Fall_Data.jpeg" alt="Figure 4 - Results on Validation Set of Fall Data." width="800" height="350">
 
-Figure 4 - Validation Set of Fall Data.
+Figure 4 - Results on Validation Set of Fall Data.
 
 <img src="Stand-versus-Fall.png" alt="Figure 5 - Stand(Right) versus Fall(Left) Data (Scaled Differently)" width="800" height="350">
 
-Figure 5 - Stand(Scaled from -60 to 60)  versus Fall Data(Scaled from -2000 to 2000 with a lot of movement in gyrX, gyrY, and gryZ).
+Figure 5 - Example Data of Stand(Scaled from -60 to 60)  versus Fall (Scaled from -2000 to 2000 with a lot of movement in gyrX, gyrY, and gryZ).
 
-  Then I exported my model by building my firmware and selecting Arduino Nano 33 BLE Microcontroller as my board. This will export the impulse, and build a binary that will run on your development board in a single step. Then I flashed the software and tested my Fall Detector(**See Figure 6**).
+  Then I exported my model from online edge impulse by building my firmware and selecting Arduino Nano 33 BLE Microcontroller as my board. This will export the impulse, and build a binary that will run on your development board in a single step. Then I flashed the software and tested my Fall Detector in real time (**See Figure 6**).
 ```
 Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
 #Classification results:
@@ -193,6 +193,8 @@ Figure 6 - Fall Detector Tested in Real Time.
   **7.** Now, I tried to flash the command “./flash_mac_test.sh”. It finally flashed the software and asked for my username and password for my edge impulse account. 
   **8.** Once I typed this in, I was able to choose which project I wanted to connect my arduino to. Then my Arduino was connected to my laptop through edge impulse. 
   **9.** Now, I was finally able to create a Model to detect falls using edge impulse.
+
+  I look forward to the next portion of my project!
 
 <!--
  # Other Resources/Examples
