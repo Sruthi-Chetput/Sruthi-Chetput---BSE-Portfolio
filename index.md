@@ -42,17 +42,27 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7f9FMkugbJ4?si=5AjQr96oZtKGsjZm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  I completed the first Milestone of my Main Project, The Fall Detector. My main project requires using Edge Impulse to create a machine learning model. Edge impulse is an online platform where users can create and deplot their own machine learning model(s). My first milestone was to use the Arduino Nano 33 BLE Sensor to detect a simulated fall.
+  I completed the first Milestone of my Main Project, The Fall Detector. My main project requires using Edge Impulse to create a machine learning model and then deploy on an edge device. Here that edge device is an Arduino microcontroller. Edge impulse is an online platform where users can create and deploy their own machine learning model(s). My first milestone was to use the Arduino Nano 33 BLE Sensor to detect a simulated fall.
   
-  My model has 2 classes, Fall and Stand. The model works by having the user drop or not drop the arduino senser. If the user drops the Arduino sensor, the model is able to accurately predict that a fall has occurred ussing the accelerometers, a device used to measure the acceleration of an object, on the 3 axes of the sensor. If the user does not drop the Arduino sensor, the model is also able to accurately detect that a fall has not occurred.
+  My model has 2 classes: 1) Fall and 2) Stand. In this initial demo, the user drops the microcontroller or leaves it idle. If the user drops the Arduino, the model is able to accurately predict that a fall has occurred using the accelerometers inside the Arduino. Accelerometers measure the acceleration of an object, on the 3 axes of the sensor. If the user does not drop the Arduino sensor, the model is also able to accurately detect that a fall has not occurred.
  
-  I first created an impulse on edge impulse(**See Figure 1**). The window size is the size od the data that will be processed per class. The window increase is used when a sample is larger than the window size. If this is the case, the window increase is used to go over that sample. I also have 3 accelerometer axes in my model, which help detect falls. Then I classify these spectral features to have to outputs, Fall and Stand.
+  I first created an impulse on edge impulse(**See Figure 1**). The window size is the size of the data that will be processed per class. The window increase is used when a sample is larger than the window size. If this is the case, the window increase is used to go over that sample. An example is if I collected a 10 second stream but my window size is one second, then the data would be split into ten one second samples. Then I classify these spectral features to have two outputs, Fall and Stand.
   
-  I wanted my model to train 50 epochs with a learning rate of 0.0005. I also adjusted my validation set size to be 20%.  Then I started training my model. It was able identify all Stands correctly. It also identified most Falls correctly. It only identified very few Falls as Stands(**See Figure 2**).  
+  I wanted my model to train 50 epochs(one complete pass of the training dataset through the algorithm)with a learning rate(determines the speed at which a model is able to reach its optimal accuracy) of 0.0005. I also adjusted my validation set size to be 20%(**Figure 2**). Then I started training my model. It was able to identify all Stands correctly. It also identified most Falls correctly. It only identified very few Falls as Stands (**See Figure 3 and 4**).  
 
-  Then I exported my model by Building my firmware and selecting Arduni Nano 33 BLE Microcontroller as my board. This will export the impulse, and build a binary that will run on your development board in a single step. Then I flashed the software and testing my Fall Detector(**See Figure 3**).
+  Then I exported my model by building my firmware and selecting Arduino Nano 33 BLE Microcontroller as my board. This will export the impulse, and build a binary that will run on your development board in a single step. Then I flashed the software and tested my Fall Detector(**See Figure 5**).
   
-  Before flashing the software, I had to use cd and ls commands to navigate to the correct folder which contained the software to flash. Then I had to put sudo in front of the command before running the software for it to run properly. Once it was flashing the software properly, I was finally able to run edge-impulse-run-impulse.
+  Before flashing the software, I had to use “cd” (changes the directory) and “ls ”(gives the ordered list of files names in a directory file) commands to navigate to the correct folder which contained the software to flash. In order for the software to run/flash properly, I had to put “sudo”(super user do) in front of the command, “./flash_mac_command”. Once it was flashing the software properly, I was finally able to run edge-impulse-run-impulse.
+
+  But before being able to create my Model, I first had to connect my Arduino board to my laptop through edge impulse. But before I could do this, I had to...
+  **1.** Install the Arduino-cli. When I was doing this, my computer ran into a lot of issues. My computer did not have admin permissions, and the initial account/user did not have user permissions. 
+  **2.** So, I created a new profile with admin permissions and redid the whole process to see if it would work. While doing this, I ran into some issues with Homebrew. So I decided to install the brew library onto my laptop. 
+  **3.** Soon after, I ran into an issue with the Arduino-cli. It had failed to install because the newest version,the version I had installed, was unstable on my mac.
+  **4.** So, I uninstalled this unstable version, and reinstalled Arduino version 0.35 and repeated the process all over again. I decided to add “/Users/Sruthi/bin” to my PATH as I kept on getting a PATH error. 
+  **5.** But soon after, there was an error with the BASH on my computer. Bash scripts are files containing code that tell the computer to do something. And since there was some error with my computer’s bash, I had to change it manually.
+  **6.** So, I manually edited the bash and then saved it. After all this, I ran the program all over again. Then I used the “ls”, “cd”, and “sudo” commands to navigate to the folder where the Arduino firmware was. 
+  **7.** Now, I tried to flash the command “./flash_mac_test.sh”. It finally flashed the software and asked for my username and password for my edge impulse account. 
+  **8.** Once I typed this in, I was able to choose which project I wanted to connect my arduino to. Then my Arduino was connected to my laptop through edge impulse. Now I am able to finally create a Model to detect falls using edge impulse.
 
 # Schematics 
 <img src="Impulse.jpeg" alt="Figure 1 - Creating an impulse with the workflow… 1.Collecting Data; 2.Preprocessing the data; 3.Designing the Neural Network; 4.Training the model." width="650" height="350">
@@ -74,7 +84,6 @@ Figure 4 - Stand versus Fall Data (Scaled Differently)
 <img src="Fall_Detector_Tested_IRT.jpeg" alt="Figure 5 - Fall Detector Tested in Real Time." width="350" height="600">
 
 Figure 5 - Fall Detector Tested in Real Time.
-
 
 <!--
  # Other Resources/Examples
