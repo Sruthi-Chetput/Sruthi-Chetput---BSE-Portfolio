@@ -62,7 +62,7 @@ Figure 2 - Neural Network Overview, (Left) Fully connected Neural Net, (Right) H
 
 Figure 3 - Validation Set of Fall Data.
 
-<img src="Stand-versus-Fall.png" alt="Figure 4 - Stand versus Fall Data (Scaled Differently)" width="800" height="350">
+<img src="Stand-versus-Fall.png" alt="Figure 4 - Stand(Right) versus Fall(Left) Data (Scaled Differently)" width="800" height="350">
 
 Figure 4 - Stand versus Fall Data (Scaled Differently)
 
@@ -71,7 +71,7 @@ Figure 4 - Stand versus Fall Data (Scaled Differently)
 <!---
 <img src="Fall_Detector_Tested_IRT.jpeg" alt="Figure 5 - Fall Detector Tested in Real Time." width="350" height="600">
 -->
-'''
+```
 Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
 #Classification results:
     Fall: 0.007813
@@ -268,7 +268,7 @@ Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.):
 #Classification results:
     Fall: 0.957031
     Stand: 0.042969
-'''
+```
 
 Figure 5 - Fall Detector Tested in Real Time.
   
