@@ -51,21 +51,25 @@ For your second milestone, explain what you've worked on since your previous mil
 
 Figure 1 - Creating an impulse with the workflow… 1.Collecting Data; 2.Preprocessing the data; 3.Designing the Neural Network; 4.Training the model.
   
-  I wanted my model to train 50 epochs(one complete pass of the training dataset through the algorithm)with a learning rate(determines the speed at which a model is able to reach its optimal accuracy) of 0.0005. I also adjusted my validation set size to be 20%(**Figure 2**). Then I started training my model. It was able to identify all Stands correctly. It also identified most Falls correctly. It only identified very few Falls as Stands (**See Figure 3 and 4**).  
+  I trained my model with 50 epochs. An epoch is one complete pass of the training dataset through the algorithm. I also put a learning rate of 0.0005(**See Figure 2**). I also adjusted my validation set size to be 20%(**Figure 3**). Then I started training my model. It was able to identify all Stands correctly. It also identified most Falls correctly. It only identified very few Falls as Stands (**See Figure 4 and 5**)
 
-<img src="Nueral-Network-Overview.jpg" alt="Figure 2 - Neural Network Overview, (Left) Fully connected Neural Net, (Right) Hyperparameter Settings." width="800" height="350">
+<img width="430" alt="Screenshot 2024-06-19 at 10 17 23 AM" src="https://github.com/Sruthi-Chetput/Sruthi-Chetput---BSE-Portfolio/assets/172335693/934e95b9-279a-4664-b5c9-e751eb901749">.
 
-Figure 2 - Neural Network Overview, (Left) Fully connected Neural Net, (Right) Hyperparameter Settings.
+Figure 2 - Learning Rate
 
-<img src="Validation_Set_of_Fall_Data.jpeg" alt="Figure 3 - Validation Set of Fall Data." width="800" height="350">
+<img src="Nueral-Network-Overview.jpg" alt="Figure 3 - Neural Network Overview, (Left) Fully connected Neural Net, (Right) Hyperparameter Settings." width="800" height="350">
 
-Figure 3 - Validation Set of Fall Data.
+Figure 3 - Neural Network Overview, (Left) Fully connected Neural Net, (Right) Hyperparameter Settings.
 
-<img src="Stand-versus-Fall.png" alt="Figure 4 - Stand(Right) versus Fall(Left) Data (Scaled Differently)" width="800" height="350">
+<img src="Validation_Set_of_Fall_Data.jpeg" alt="Figure 4 - Validation Set of Fall Data." width="800" height="350">
 
-Figure 4 - Stand(Scaled from -60 to 60)  versus Fall Data(Scaled from -2000 to 2000 with a lot of movement in gyrX, gyrY, and gryZ).
+Figure 4 - Validation Set of Fall Data.
 
-  Then I exported my model by building my firmware and selecting Arduino Nano 33 BLE Microcontroller as my board. This will export the impulse, and build a binary that will run on your development board in a single step. Then I flashed the software and tested my Fall Detector(**See Figure 5**).
+<img src="Stand-versus-Fall.png" alt="Figure 5 - Stand(Right) versus Fall(Left) Data (Scaled Differently)" width="800" height="350">
+
+Figure 5 - Stand(Scaled from -60 to 60)  versus Fall Data(Scaled from -2000 to 2000 with a lot of movement in gyrX, gyrY, and gryZ).
+
+  Then I exported my model by building my firmware and selecting Arduino Nano 33 BLE Microcontroller as my board. This will export the impulse, and build a binary that will run on your development board in a single step. Then I flashed the software and tested my Fall Detector(**See Figure 6**).
 ```
 Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
 #Classification results:
@@ -175,7 +179,7 @@ Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.):
     Stand: 0.957031
 ```
 
-Figure 5 - Fall Detector Tested in Real Time.
+Figure 6 - Fall Detector Tested in Real Time.
   
   Before flashing the software, I had to use “cd” (changes the directory) and “ls ”(gives the ordered list of files names in a directory file) commands to navigate to the correct folder which contained the software to flash. In order for the software to run/flash properly, I had to put “sudo”(super user do) in front of the command, “./flash_mac_command”. Once it was flashing the software properly, I was finally able to run edge-impulse-run-impulse.
 
