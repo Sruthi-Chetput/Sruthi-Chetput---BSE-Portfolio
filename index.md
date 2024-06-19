@@ -59,13 +59,17 @@ For your second milestone, explain what you've worked on since your previous mil
 
 Figure 1 - Creating an impulse with the workflow… 1.Collecting Data; 2.Preprocessing the data; 3.Designing the Neural Network; 4.Training the model.
 
-<img src="Validation_Set_of_Fall_Data.jpeg" alt="Figure 2 - Validation Set of Fall Data." width="600" height="350">
+<img src="Nueral-Network-Overview.jpg" alt="Figure 2 - Neural Network Overview, (Left) Fully connected Neural Net, (Right) Hyperparameter Settings." width="600" height="350">
 
-Figure 2 - Validation Set of Fall Data.
+Figure 2 - Neural Network Overview, (Left) Fully connected Neural Net, (Right) Hyperparameter Settings.
+
+<img src="Validation_Set_of_Fall_Data.jpeg" alt="Figure 3 - Validation Set of Fall Data." width="600" height="350">
+
+Figure 3 - Validation Set of Fall Data.
 
 <img src="Fall_Detector_Tested_IRT.jpeg" alt="Figure 3 - Fall Detector Tested in Real Time." width="350" height="600">
 
-Figure 3 - Fall Detector Tested in Real Time.
+Figure 5 - Fall Detector Tested in Real Time.
 
 
 <!--
