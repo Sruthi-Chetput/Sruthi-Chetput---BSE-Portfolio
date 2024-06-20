@@ -6,6 +6,7 @@ The fall detector has a small TinyML, a machine learning device in charge of det
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions-->
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
+|:--:||:--:||:--:||:--:|
 | Sruthi C | Lynbrook High School | Engineering | Incoming Sophomore |
 
 <img src="sruthiREAL.jpeg" alt="Photograph of Sruthi, Super Smart and Really Cool Engineer!" width="300" height="400">
