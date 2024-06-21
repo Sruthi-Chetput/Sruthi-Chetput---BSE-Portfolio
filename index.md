@@ -29,11 +29,15 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pYVFgmePl9U?si=sBD4cOcIjoAsiElG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  I completed the second Milestone of my Main Project, The Fall Detector!  In my first Milestone, I flashed the software on the terminal and tested my Fall Detector through the API. For the second  Milestone, I changed it so my model would be able to run directly on the Arduino instead of the Terminal(**See Figure 1**).
+  I completed the second Milestone of my Main Project, The Fall Detector!  In my first Milestone, I flashed the software on the terminal and tested my Fall Detector through the API(**See Figure 1**). 
 
-<img src="Milestone1-2-slides-flowchart.png" alt="Figure 1 - Flowchart comparing Milestone 1(Right) and Milestone 2(Left)." width="900" height="350">
+<img src="Milestone1-Flowchart" alt="Figure 1 - Flowchart of Milestone 1." width="900" height="350">
+  
+  For the second  Milestone, I changed it so my model would be able to run directly on the Arduino instead of the Terminal(**See Figure 2**).
 
-Figure 1 - Flowchart comparing Milestone 1(Right) and Milestone 2(Left).
+<img src="Milestone2-Flowchart" alt="Figure 1 - Flowchart of Milestone 2." width="900" height="350">
+
+Figure 2 - Flowchart of Milestone 2.
   
   I added functionality of Green when Standing and Red when Falling. To do this, I had to:
   **1.** Go to edge-impulse and deploy my project. 
