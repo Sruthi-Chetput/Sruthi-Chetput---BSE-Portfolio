@@ -35,7 +35,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 Figure 1 - Simple Flowchart of Milestone 2.
 
-<img src="Mile1FlowchartClear.png" alt="Figure 2 -  Complex Flowchart of Milestone 1." width="800" height="550">
+<img src="Mile1FlowchartClear.png" alt="Figure 2 -  Complex Flowchart of Milestone 1." width="800" height="650">
 
 Figure 2 -  Complex Flowchart of Milestone 1.
 
