@@ -31,7 +31,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
   I completed the second Milestone of my Main Project, The Fall Detector!  In my first Milestone, I flashed the software on the terminal and tested my Fall Detector through the API. For the second  Milestone, I changed it so my model would be able to run directly on the Arduino instead of the Terminal(**See Figure 1**).
 
-<img src="Milestone1-2-slides-flowchart.png" alt="Figure 1 - Flowchart comparing Milestone 1(Right) and Milestone 2(Left)." width="800" height="350">
+<img src="Milestone1-2-slides-flowchart.png" alt="Figure 1 - Flowchart comparing Milestone 1(Right) and Milestone 2(Left)." width="900" height="350">
 
 Figure 1 - Flowchart comparing Milestone 1(Right) and Milestone 2(Left).
   
@@ -52,7 +52,7 @@ Figure 2 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detec
   **4.** Then I added a “break” command since I have no reason to go to the “else” statement and check for “Stand” since I already know it is a “Fall” since the light turned Red.
   **5.** If the class name was “Stand” and/or if the chance of falling is 50% or less, I made the LED light turn Green(See Figure 3).
 
-<img src="Green_Light.png" alt="Figure 3 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Green after detecting a _Stand_."width="800" height="350">
+<img src="Green_Light.png" alt="Figure 2 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a _Stand_." width="800" height="350">
 
 Figure 3 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Green after detecting a “Stand".
 
