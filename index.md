@@ -31,11 +31,11 @@ For your final milestone, explain the outcome of your project. Key details to in
 
   I completed the second Milestone of my Main Project, The Fall Detector!  In my first Milestone, I flashed the software on the terminal and tested my Fall Detector through the API(**See Figure 1**). 
 
-<img src="Milestone1-Flowchart.png" alt="Figure 1 - Flowchart of Milestone 1." width="700" height="350">
+<img src="Milestone1-Flowchart.png" alt="Figure 1 - Flowchart of Milestone 1." width="600" height="350">
   
   For the second  Milestone, I changed it so my model would be able to run directly on the Arduino instead of the Terminal(**See Figure 2**).
 
-<img src="Milestone2-Flowchart.png" alt="Figure 1 - Flowchart of Milestone 2." width="700" height="350">
+<img src="Milestone2-Flowchart.png" alt="Figure 1 - Flowchart of Milestone 2." width="600" height="350">
 
 Figure 2 - Flowchart of Milestone 2.
   
