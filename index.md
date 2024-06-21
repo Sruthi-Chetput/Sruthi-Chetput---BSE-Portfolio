@@ -53,14 +53,14 @@ Figure 3 -  Complex Flowchart of Milestone 2.
 **2.** I used an “if” condition to check if a “Fall” or “Stand” occurRed.
 **3.** If the class name was “Fall” and only if the chance of falling is 50% or higher, I made the LED light turn Red(**See Figure 4**).
 
-<img src="RedLightBright.HEIC" alt="Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a Fall." width="800" height="350">
+<img src="RedLightBright.png" alt="Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a Fall." width="800" height="350">
 
 Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a _Fall_.
 
 **4.** Then I added a “break” command since I have no reason to go to the “else” statement and check for “Stand” since I already know it is a “Fall” since the light turned Red.
 **5.** If the class name was “Stand” and/or if the chance of falling is 50% or less, I made the LED light turn Green(**See Figure 5**).
 
-<img src="GreenLightBright.HEIC" alt="Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Green after detecting a Stand" width="800" height="350">
+<img src="GreenLightBright.png" alt="Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Green after detecting a Stand" width="800" height="350">
 
 Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a _Stand_.
 
