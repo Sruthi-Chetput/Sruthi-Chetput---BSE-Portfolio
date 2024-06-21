@@ -39,16 +39,16 @@ Figure 1 - Simple Flowchart of Milestone 2.
 
 Figure 2 -  Complex Flowchart of Milestone 1.
 
-<img src="Mile2FlowchartClean.png" alt="Figure 3 -  Complex Flowchart of Milestone 2." width="800" height="550">
+<img src="Mile2FlowchartClean.png" alt="Figure 3 -  Complex Flowchart of Milestone 2." width="800" height="650">
 
 Figure 3 -  Complex Flowchart of Milestone 2.
 
   I added functionality of Green when Standing and Red when Falling. To do this, I had to:
 **1.** Go to edge-impulse and deploy my project. 
-**2.** Convert it into a ZIP.file and add it to the Arduino IDE. 
-**3.** Now, I tested my project in Arduino and it worked. I made my project run in Arduino IDE instead of running in the terminal, the first step for the second Milestone was accomplished.
+**2.** Convert it into a ZIP.file and add the ZIP.file as a Library to the Arduino IDE. 
+**3.** Now, I tested my project in Arduino and it worked. I made my project run only on the Arduino device instead of running in the terminal.
 
-  I also made the Builtin LED light up in my second Milestone. Red light corresponds to a “Fall”. Green light corresponds to a “Stand”. In order to do this, I had to:
+  I also made the Builtin LED light up in my second Milestone so user can visually detect falls. Red light corresponds to a “Fall”. Green light corresponds to a “Stand”. In order to do this, I had to:
 **1.** Using the ML model I trained from edge impulse, I had two classes: “Fall” and “Stand”
 **2.** I used an “if” condition to check if a “Fall” or “Stand” occurRed.
 **3.** If the class name was “Fall” and only if the chance of falling is 50% or higher, I made the LED light turn Red(**See Figure 4**).
@@ -66,7 +66,7 @@ Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detec
 
 **6.** All this code was in a loop so it will keep on repeating.
 
-  Some challenges popped up when I was trying to compile the Arduino code. An error would occur but it would not highlight anyproblemns in the code. I later on realized I have an Arduino Nano 33 BLE Sence but I was running the program for an Arduino Nano 33 BLE Sense Rev2. So when I changed and ran my code on the program compatible with my board, it worked without any errors. However, another error would occur stating that the board was not connected to the port when it clearly was. So then I decided to unplug the wires and flip it over. Then I compiled the code again and it worked! But everytime I try to compile the code, It would take a long time for it to compile and upload and finally execute my code. So, when I fixed my code to run without any errors. I would compile it multiple times to make the speed of compiling faster. This helped because now when I want to compile the code it takes up a much shorter time than before. 
+  Some challenges popped up when I was trying to compile the Arduino code. An error would occur but it would not highlight any problemns in the code. I later on realized I have an Arduino Nano 33 BLE Sense but I was running the program for an Arduino Nano 33 BLE Sense Rev2. So when I changed and ran my code on the program compatible with my board, it worked without any errors. However, another error would occur stating that the board was not connected to the port when it clearly was. So then I decided to unplug the wires and flip it over. Then I compiled the code again and it worked! But everytime I try to compile the code, It would take a long time for it to compile and upload and finally execute my code. So, when I fixed my code to run without any errors. I would compile it multiple times to make the speed of compiling faster. This helped because now when I want to compile the code it takes up a much shorter time than before. 
   I am very excited to put all the parts together and finally make it wearable in my third Milestone!
 
 # Code 
