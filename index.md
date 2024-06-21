@@ -66,27 +66,19 @@ Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Green after det
   I am very excited to put all the parts together and finally make it wearable in my third Milestone!
 
 # Code 
+```
 
 /* Includes ---------------------------------------------------------------- */
 #include <Fall-Detector-BSE_inferencing.h>
 #include <Arduino_LSM9DS1.h> //Click here to get the library: https://www.arduino.cc/reference/en/libraries/arduino_lsm9ds1/
-
 /* Constant defines -------------------------------------------------------- */
 #define CONVERT_G_TO_MS2    9.80665f
 #define MAX_ACCEPTED_RANGE  2.0f        // starting 03/2022, models are generated setting range to +-2, but this example use Arudino library which set range to +-4g. If you are using an older model, ignore this value and use 4.0f instead
-
 /* Private variables ------------------------------------------------------- */
 static bool debug_nn = false; // Set this to true to see e.g. features generated from the raw signal
-
-/**
-* @brief      Arduino setup function
-*/
 void setup()
 {
-    // put your setup code here, to run once:
     Serial.begin(115200);
-    // comment out the below line to cancel the wait for USB connection (needed for native USB)
-    //while (!Serial);
     Serial.println("Edge Impulse Inferencing Demo");
 
     if (!IMU.begin()) {
@@ -106,70 +98,40 @@ void setup()
   pinMode(RED, OUTPUT);
   pinMode(GREEN, OUTPUT);
 }
-
-/**
- * @brief Return the sign of the number
- * 
- * @param number 
- * @return int 1 if positive (or 0) -1 if negative
- */
 float ei_get_sign(float number) {
     return (number >= 0.0) ? 1.0 : -1.0;
 }
-
-/**
-* @brief      Get data and run inferencing
-*
-* @param[in]  debug  Get debug info if true
-*/
 void loop()
 {
     ei_printf("\nStarting inferencing in a second...\n");
-
     delay(100);
-
     ei_printf("Sampling...\n");
-
-    // Allocate a buffer here for the values we'll read from the IMU
     float buffer[EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE] = { 0 };
-
     for (size_t ix = 0; ix < EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE; ix += 3) {
-        // Determine the next tick (and then sleep later)
         uint64_t next_tick = micros() + (EI_CLASSIFIER_INTERVAL_MS * 1000);
-
         IMU.readAcceleration(buffer[ix], buffer[ix + 1], buffer[ix + 2]);
-
         for (int i = 0; i < 3; i++) {
             if (fabs(buffer[ix + i]) > MAX_ACCEPTED_RANGE) {
                 buffer[ix + i] = ei_get_sign(buffer[ix + i]) * MAX_ACCEPTED_RANGE;
             }
         }
-
         buffer[ix + 0] *= CONVERT_G_TO_MS2;
         buffer[ix + 1] *= CONVERT_G_TO_MS2;
         buffer[ix + 2] *= CONVERT_G_TO_MS2;
-
         delayMicroseconds(next_tick - micros());
     }
-
-    // Turn the raw buffer in a signal which we can the classify
     signal_t signal;
     int err = numpy::signal_from_buffer(buffer, EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE, &signal);
     if (err != 0) {
         ei_printf("Failed to create signal from buffer (%d)\n", err);
         return;
     }
-
-    // Run the classifier
     ei_impulse_result_t result = { 0 };
-
     err = run_classifier(&signal, &result, debug_nn);
     if (err != EI_IMPULSE_OK) {
         ei_printf("ERR: Failed to run classifier (%d)\n", err);
         return;
     }
-
-    // print the predictions
     ei_printf("Predictions ");
     ei_printf("(DSP: %d ms., Classification: %d ms., Anomaly: %d ms.)",
         result.timing.dsp, result.timing.classification, result.timing.anomaly);
@@ -185,14 +147,12 @@ void loop()
           digitalWrite(RED, HIGH);  
           delay(1000);                      // Green Light   
           digitalWrite(RED, LOW); 
-          //delay(1000);
         }
     }
 #if EI_CLASSIFIER_HAS_ANOMALY == 1
     ei_printf("    anomaly score: %.3f\n", result.anomaly);
 #endif
 }
-
 #if !defined(EI_CLASSIFIER_SENSOR) || EI_CLASSIFIER_SENSOR != EI_CLASSIFIER_SENSOR_ACCELEROMETER
 #error "Invalid model for current sensor"
 #endif
