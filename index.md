@@ -29,41 +29,6 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pYVFgmePl9U?si=sBD4cOcIjoAsiElG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  I completed the second Milestone of my Main Project, The Fall Detector!  In my first Milestone, I flashed the software on the terminal and tested my Fall Detector through the API(**See Figure 1**). 
-
-<img src="Milestone1-Flowchart.png" alt="Figure 1 - Flowchart of Milestone 1." width="900" height="550">
-  
-  For the second  Milestone, I changed it so my model would be able to run directly on the Arduino instead of the Terminal(**See Figure 2**).
-
-<img src="Milestone2-Flowchart.png" alt="Figure 1 - Flowchart of Milestone 2." width="900" height="550">
-
-Figure 2 - Flowchart of Milestone 2.
-  
-  I added functionality of Green when Standing and Red when Falling. To do this, I had to:
-  **1.** Go to edge-impulse and deploy my project. 
-  **2.** Convert it into a ZIP.file and add it to the Arduino IDE. 
-  **3.** Now, I tested my project in Arduino and it worked. I made my project run in Arduino IDE instead of running in the terminal, the first step for the second Milestone was accomplished.
-
-  I also made the Builtin LED light up in my second Milestone. Red light corresponds to a “Fall”. Green light corresponds to a “Stand”. In order to do this, I had to:
-  **1.** Using the ML model I trained from edge impulse, I had two classes: “Fall” and “Stand”
-  **2.** I used an “if” condition to check if a “Fall” or “Stand” occurred.
-  **3.** If the class name was “Fall” and only if the chance of falling is 50% or higher, I made the LED light turn Red(**See Figure 3**).
-
-<img src="Red_Light.png" alt="Figure 3 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a _Fall_." width="800" height="350">
-
-Figure 3 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a “Fall".
-
-  **4.** Then I added a “break” command since I have no reason to go to the “else” statement and check for “Stand” since I already know it is a “Fall” since the light turned Red.
-  **5.** If the class name was “Stand” and/or if the chance of falling is 50% or less, I made the LED light turn Green(**See Figure 4**).
-
-<img src="Green_Light.png" alt="Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a _Stand_." width="800" height="350">
-
-Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Green after detecting a “Stand".
-
-  **6.** All this code was in a loop so it will keep on repeating.
-
-  Some challenges popped up when I was trying to compile the Arduino code. An error would occur but it would not highlight anyproblemns in the code. I later on realized I have an Arduino Nano 33 BLE Sence but I was running the program for an Arduino Nano 33 BLE Sense Rev2. So when I changed and ran my code on the program compatible with my board, it worked without any errors. However, another error would occur stating that the board was not connected to the port when it clearly was. So then I decided to unplug the wires and flip it over. Then I compiled the code again and it worked! But everytime I try to compile the code, It would take a long time for it to compile and upload and finally execute my code. So, when I fixed my code to run without any errors. I would compile it multiple times to make the speed of compiling faster. This helped because now when I want to compile the code it takes up a much shorter time than before.
-  I am very excited to put all the parts together and finally make it wearable in my third Milestone!
 
 # Code 
 ```
