@@ -43,18 +43,18 @@ Figure 1 - Flowchart comparing Milestone 1(Right) and Milestone 2(Left).
   I also made the Builtin LED light up in my second Milestone. Red light corresponds to a “Fall”. Green light corresponds to a “Stand”. In order to do this, I had to:
   **1.** Using the ML model I trained from edge impulse, I had two classes: “Fall” and “Stand”
   **2.** I used an “if” condition to check if a “Fall” or “Stand” occurred.
-  **3.** If the class name was “Fall” and only if the chance of falling is 50% or higher, I made the LED light turn Red(See Figure 2).
+  **3.** If the class name was “Fall” and only if the chance of falling is 50% or higher, I made the LED light turn Red(**See Figure 3**).
 
-<img src="Red_Light.png" alt="Figure 2 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a _Fall_." width="800" height="350">
+<img src="Red_Light.png" alt="Figure 3 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a _Fall_." width="800" height="350">
 
-Figure 2 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a “Fall".
+Figure 3 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a “Fall".
 
   **4.** Then I added a “break” command since I have no reason to go to the “else” statement and check for “Stand” since I already know it is a “Fall” since the light turned Red.
-  **5.** If the class name was “Stand” and/or if the chance of falling is 50% or less, I made the LED light turn Green(See Figure 3).
+  **5.** If the class name was “Stand” and/or if the chance of falling is 50% or less, I made the LED light turn Green(**See Figure 4**).
 
-<img src="Green_Light.png" alt="Figure 2 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a _Stand_." width="800" height="350">
+<img src="Green_Light.png" alt="Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detecting a _Stand_." width="800" height="350">
 
-Figure 3 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Green after detecting a “Stand".
+Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Green after detecting a “Stand".
 
   **6.** All this code was in a loop so it will keep on repeating.
 
