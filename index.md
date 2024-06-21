@@ -35,7 +35,7 @@ For your final milestone, explain the outcome of your project. Key details to in
   
   For the second  Milestone, I changed it so my model would be able to run directly on the Arduino instead of the Terminal(**See Figure 2**).
 
-<img src="Milestone2-Flowchart.png" alt="Figure 1 - Flowchart of Milestone 2." width="600" height="350">
+<img src="Milestone2-Flowchart.png" alt="Figure 1 - Flowchart of Milestone 2." width="900" height="550">
 
 Figure 2 - Flowchart of Milestone 2.
   
