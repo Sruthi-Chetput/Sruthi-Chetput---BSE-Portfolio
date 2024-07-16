@@ -1,5 +1,5 @@
 # Fall Detector
-The fall detector has a small TinyML, a machine learning device in charge of detecting falls via the onboard accelerometer data, and reporting to a server through Bluetooth (BT). The server is a Python script that scans specific BT announcements, parses the fall alert information, and stores it into a SQL Lite database for reports and alerts. I choose to work on this project because my grandma has a medical condition where she falls when she suddenly hears a noise or when someome passes her unexpecedly. I created this fall detector to help her!
+The fall detector has a small TinyML, a machine learning device in charge of detecting falls via the onboard accelerometer data. Only when a Fall occurs, the inbuilt LED light will turn Red. When a Fall has not occured, the inbuilt LED light will stay at a green color. I choose to work on this project because my grandma has a medical condition where she falls when she suddenly hears a noise or when someome passes her unexpecedly. I created this fall detector to help her!
 
 <!---
 [Edit the paragraph above to make it better with this prompt] Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
@@ -11,10 +11,10 @@ You should comment out all portions of your portfolio that you have not complete
 
 <img src="sruthiREAL.jpeg" alt="Photograph of Sruthi, Super Smart and Really Cool Engineer!" width="300" height="400">
   
-<!---# Third(Final) Milestone: Putting The Fall Detector Together
+# Third(Final) Milestone: Putting The Fall Detector Together
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hj8J3zDPKIc?si=5vd0iITn1NmihyBR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<!---
 For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
