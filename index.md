@@ -39,7 +39,7 @@ Figure 2 - 3D printed case with straps attached and circular hole that is not bi
  
   While using the Dremel I had to wear heavy gloves and safety glasses. The Dremel is a tool that uses a rotating tip. Since I was drilling a hole into a plastic 3D printed part, I had to be extremely careful not to melt the plastic all over the 3D printed part. I had to practice using the dremel at one of its highest speeds on wood first, using it for a few seconds at a time. Once I got the hang of this, I was able to create an oval shaped hole in my 3D printed part (**See Figure 3**).
 
-<img src="hole.jpg" alt="Figure 2 - 3D printed case with hole drilled using a Dremel." width="800" height="800">
+<img src="hole.jpg" alt="Figure 2 - 3D printed case with hole drilled using a Dremel." width="800" height="900">
 
 Figure 3 - 3D printed case with hole drilled using a Dremel.
  
