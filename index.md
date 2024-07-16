@@ -416,20 +416,8 @@ void loop(void) {
 }
 ```
 # Bill of Materials for Main Project
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
-
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Arduino Nano 33 BLE Sense | Used for Fall Detection and Arduino Programming | $45.95 | <a href="https://www.amazon.com/Arduino-Nano-33-BLE/dp/B07WV59YTZ/ref=sr_1_4?crid=1TKQQNZ7YPAD9&dib=eyJ2IjoiMSJ9.dhczs6UK7D4jeS6ohbXhWne91Th6rZeMDN46m9rlNY6FuwTojNoRfyP5tM90G4nSkneZz75CgR3J9S8HJbMwmkdgxmsYGyTnWd4A5Gv3Z4pq6iBsPKhYwAQut9Eca0ypZSAfAnLhi4nUxVlC1ThSHSRpn2bxMM7kr0hCoHTfy_WR6WG47Wkb-2N4BBHMWWRDwuRy9xPFdjkhBYRwJ5BVMVA17iNFnkpYbaZLWORtKvY.lesmexjeGJoiYJpTIqx02w2hmiqaTjSBbto7AoPif-E&dib_tag=se&keywords=arduino+nano+33+ble+sense+rev+1&qid=1721172610&sprefix=arduino+nano+33+ble+sense+%2Caps%2C134&sr=8-4"> Link </a> |
 | Twist-wires | Used to secure 3D lid onto 3D printed part | $4.98 | <a href="https://www.amazon.com/Twist-Plastic-Reusable-Household-Office/dp/B09GFHPJBZ/ref=sr_1_7?crid=14C0HVL6JKRS8&dib=eyJ2IjoiMSJ9.ejh_Iweyjy2dEJD590O0BfVfMQ_o0DkmoIS3gDSXE3YUhjug4xilHoxtbqXKMbmG14WvxNRA97dvtTStWsjXEhrI4UZ7j2KypMebJV2gDbIhBJKgQz1VHcVdoPsZbwHR4bg5S9Wyr7EG6QkY285u5Fl8P25Nxbw-90TmDy4pjHxkPskoGcX1GGNUBw7f400SoUy-u4895nqrB4-5qlqYMLwffYBky3C0SY7WTvJzfQHS7DeNK-RqsPBJ_Ev9pDt_4Oi1nacU6Fe1XFCyIVo50b_vEl3tJbkh22f7AtZPitQ.GhvNj-AgmAu4bOuVtC_wTH-xbK4OwDfvgFhA0Hu2FHw&dib_tag=se&keywords=twist-wires&qid=1721172805&sprefix=twist-wire%2Caps%2C153&sr=8-7&th=1"> Link </a> |
 | Portable Charger/Battery Pack | Used to power the Arduino when being worn | $21.99 | <a href="https://www.amazon.com/Anker-PowerCore-Ultra-Compact-High-Speed-Technology/dp/B01CU1EC6Y?th=1"> Link </a> |
-<!---
-# Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
-To watch the BSE tutorial on how to create a portfolio, click here.
--->
-
