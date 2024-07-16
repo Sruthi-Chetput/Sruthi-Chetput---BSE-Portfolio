@@ -3,8 +3,8 @@ The fall detector has a small TinyML, a machine learning device in charge of det
 
 <!---
 [Edit the paragraph above to make it better with this prompt] Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
-
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions-->
+
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Sruthi C | Lynbrook High School | Engineering | Incoming Sophomore |
@@ -59,6 +59,7 @@ Figure 5 - Arduino tightly placed inside the 3D printed case using foam.
 
   After this, I tested my project a few more times to check if everything worked properly. When standing, sitting, or walking, the light would be green. But whenever I fall hard or soft, on the floor or the chair, it doesn’t matter. My Fall Detector can detect that as a fall and change the LED light from Green to Red. From this, I know that my Fall Detector is working accurately!
 
+  Overall, throught my time at Bluestamp I learned many things. My project requires me to use Machine Learning via Edge Impulse and an Arduino Nano 33 BLE Sense along with Arduino IDE. Before Bluestamp, I did not know what any of these things were. But throught my time here, I learned how to Conncect an Arduino Nano to my laptop, how to create a machine learning model using edge impulse, and how to program code using Arduino. I learned about the difffrent accelerometer values used in my project, the inbuilt LED light, and how to use the command line interface too. I hope to use these skills in the future to create something new that will help make people’s life easier.
 
 # Second Milestone: LED Light incorporated with Fall Detector
 
@@ -415,7 +416,7 @@ void loop(void) {
 }
 ```
 <!---
-# Bill of Materials
+# Bill of Materials for Main Project
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
 Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
 
