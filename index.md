@@ -14,13 +14,31 @@ You should comment out all portions of your portfolio that you have not complete
 # Third(Final) Milestone: Putting The Fall Detector Together
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hj8J3zDPKIc?si=5vd0iITn1NmihyBR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<!---
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
--->
+
+  I completed the third milestone of my Main Project, The Fall Detector! In my first milestone, I flashed the software on the terminal and tested my Fall Detector through the Arduino IDE. For my second milestone, I built upon my system so my model would be able to run directly on the Arduino instead of the Terminal and furthermore, the inbuilt LED would turn red or green based on the detection of a fall or a stand. For my third milestone, I retrained my model so it would be more accurate in detecting falls when wearing the Arduino Nano. In addition to this, I put the Arduino Nano inside the 3D printed case and attached it to the battery pack. Then, I tested to see if my Fall Detector was working and it worked!
+  
+  The first step in my third milestone was to retrain my model. I wanted to do this since I realized that my model would sometimes detect a fall even though I was not falling. Therefore, I went to Edge Impulse to retrain my model, built the Arduino library by deploying my model, and added the library to Arduino IDE (**See Figure 1**).
+  
+  When compiling the Arduino code on the IDE, I ran into some challenges. I came across the error “Could not find Arduino on port”. In an attempt to fix this issue, I tried switching ports and then compiling my program again. However this was to no avail. Finally, I decided to uninstall the Arduino Board from the Boards Manager. After doing this step, I re-installed the board but this time, I installed a lower version. When I compiled this, the code was successfully running on the Arduino.
+  
+  The next step was to attach all the parts together. Hence, I took my 3D printed case and examined it. There were two thin lines and one circular hole at the bottom. I knew the two thin lines were used for the strap, so I decided to use the circular hole to insert the wire. This way, the Arduino could be attached to the battery pack and my Fall Detector would be able to turn on and work. An early challenge I ran into with this 3D printed case was how to power my project when the wire would not fit through the circular hole into the 3D printed part(**See Figure 2**).
+  
+  To address this issue, I had 2 ideas.
+**1.** I could cut the wire and insert it inside the hole. Then I could solder it back together.
+**2.** I could make a bigger hole using the dremel and just insert the wire inside of this new hole.
+
+	The first idea would take a long time and I would need to put in way more effort. However, the second idea would be a bit dangerous as I would use the Dremel tool. Yet, it would still be easier and take way less time than the first idea. Hence, I went to execute my second idea.
+ 
+  While using the Dremel I had to wear heavy gloves and safety glasses. The Dremel is a tool that uses a rotating tip. Since I was drilling a hole into a plastic 3D printed part, I had to be extremely careful not to melt the plastic all over the 3D printed part. I had to practice using the dremel at one of its highest speeds on wood first, using it for a few seconds at a time. Once I got the hang of this, I was able to create an oval shaped hole in my 3D printed part (**See Figure 3**).
+ 
+  After I fit the wire through, I was able to attach it to the Arduino as well as the battery pack. Now I decided to wear the strap with my 3D printed case that had my Arduino attached to the battery pack. After I wore my project, I decided to test it out. I turned the battery pack on and started standing/walking and falling.
+ 
+  When I was testing my project, I ran into 2 complications. One of them was that my 3D printed lid would often fall onto the floor. To address this issue, I took two black twist-ties and twisted them together to create one long twist-tie. I then twisted it around my 3D printed case, securing the lid (**See Figure 4**). 
+ 
+  Now, when I tested my project, the lid was staying on and secured to the case. With this issue addressed I could now focus on testing my project.. My Fall Detector is able to correctly identify if a Fall occurred or not. However, I noticed that the position of the arduino keeps on changing the case. Sometimes, you can not see the Red or Green lights. To fix this issue, I took some of the foam that came with the Arduino case and ripped it up. I then placed the Arduino in a position where the light is visible. Then I used the tiny foam pieces that I ripped and stuffed them into the empty spaces. This way the Arduino is not able to move(**See Figure 5**).
+
+  After this, I tested my project a few more times to check if everything worked properly. When standing, sitting, or walking, the light would be green. But whenever I fall hard or soft, on the floor or the chair, it doesn’t matter. My Fall Detector can detect that as a fall and change the LED light from Green to Red. From this, I know that my Fall Detector is working accurately!
+
 
 # Second Milestone: LED Light incorporated with Fall Detector
 
@@ -64,6 +82,7 @@ Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detec
 **6.** All this code was in a loop so it will keep on repeating.
 
   Some challenges popped up when I was trying to compile the Arduino code. An error would occur but it would not highlight any problemns in the code. I later on realized I have an Arduino Nano 33 BLE Sense but I was running the program for an Arduino Nano 33 BLE Sense Rev2. So when I changed and ran my code on the program compatible with my board, it worked without any errors. However, another error would occur stating that the board was not connected to the port when it clearly was. So then I decided to unplug the wires and flip it over. Then I compiled the code again and it worked! But everytime I try to compile the code, It would take a long time for it to compile and upload and finally execute my code. So, when I fixed my code to run without any errors. I would compile it multiple times to make the speed of compiling faster. This helped because now when I want to compile the code it takes up a much shorter time than before. 
+  
   I am very excited to put all the parts together and finally make it wearable in my third Milestone!
 
 # Code 
