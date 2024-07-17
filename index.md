@@ -11,7 +11,7 @@ You should comment out all portions of your portfolio that you have not complete
 
 <img src="sruthiREAL.jpeg" alt="Photograph of Sruthi, Super Smart and Really Cool Engineer!" width="300" height="400">
   
-# Third(Final) Milestone: Putting The Fall Detector Together
+# Third(Final) Milestone: Putting The Fall Detector Together with Schematics
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hj8J3zDPKIc?si=5vd0iITn1NmihyBR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -61,7 +61,7 @@ Figure 5 - Arduino tightly placed inside the 3D printed case using foam.
 
   Overall, throught my time at Bluestamp I learned many things. My project requires me to use Machine Learning via Edge Impulse and an Arduino Nano 33 BLE Sense along with Arduino IDE. Before Bluestamp, I did not know what any of these things were. But throught my time here, I learned how to Conncect an Arduino Nano to my laptop, how to create a machine learning model using edge impulse, and how to program code using Arduino. I learned about the difffrent accelerometer values used in my project, the inbuilt LED light, and how to use the command line interface too. I hope to use these skills in the future to create something new that will help make people’s life easier.
 
-# Second Milestone: LED Light incorporated with Fall Detector
+# Second Milestone: LED Light incorporated with Fall Detector with Schematics
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pYVFgmePl9U?si=sBD4cOcIjoAsiElG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
