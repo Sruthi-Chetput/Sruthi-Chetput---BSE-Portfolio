@@ -31,7 +31,7 @@ Figure 1 - Retraining my ML model using Edge-Impulse and building the Arduino Li
 
   The next step was to attach all the parts together. I took my 3D printed case and examined it(**See Figure 2**). There were two thin lines and one circular hole at the bottom. I knew the two thin lines were used for the strap, so I decided to use the circular hole to insert the wire. This way, the Arduino could be attached to the battery pack and my Fall Detector would be able to turn on and work. An early challenge I ran into with this 3D printed case was how to power my project when the wire would not fit through the circular hole into the 3D printed part(**See Figure 3**).
 
-<img src="3D.png" alt="Figure 2 - 3D printed case design." width="900" height="800">
+<img src="3D.png" alt="Figure 2 - 3D printed case design." width="1000" height="800">
 
 Figure 2 - 3D printed case design.
 
