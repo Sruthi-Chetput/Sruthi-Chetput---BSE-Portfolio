@@ -115,8 +115,7 @@ Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detec
   I am very excited to put all the parts together and finally make it wearable in my third Milestone!
 
 # Code 
-```
-
+```cpp
 /* Includes ---------------------------------------------------------------- */
 #include <Fall-Detector-BSE_inferencing.h>
 #include <Arduino_LSM9DS1.h> //Click here to get the library: https://www.arduino.cc/reference/en/libraries/arduino_lsm9ds1/
