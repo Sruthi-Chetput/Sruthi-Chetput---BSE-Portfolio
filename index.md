@@ -17,7 +17,7 @@ You should comment out all portions of your portfolio that you have not complete
 
   I completed the third milestone of my Main Project, The Fall Detector! For my third milestone, I retrained my model so it would be very accurate in detecting falls and also made my entire device fully wearable! I wear the Arduino Nano in the 3D printed case with a velcro strapped attached to my waist(**See Figure 1**). 
 
-<img src="RealPic.png" alt="Figure 1 - Sruthi wearing the Fall Detector." width="300" height="400">
+<img src="RealPic.png" alt="Figure 1 - Sruthi wearing the Fall Detector." width="600" height="800">
 
 Figure 1 - Wearing the Fall Detector..
 
