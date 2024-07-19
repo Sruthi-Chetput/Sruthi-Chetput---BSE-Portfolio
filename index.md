@@ -217,7 +217,7 @@ void loop()
  
   I first created an impulse on edge impulse(**See Figure 1**). The window size is the size of the data that will be processed per class. The window increase is used when a sample is larger than the window size. If this is the case, the window increase is used to go over that sample. An example is if I collected a 10 second stream but my window size is one second, then the data would be split into ten one second samples. Then I classify these spectral features to have two outputs, Fall and Stand.
   
-<img src="Impulse.jpeg" alt="Figure 1 - Creating an impulse with the workflow… 1.Collecting Data; 2.Preprocessing the data; 3.Designing the Neural Network; 4.Training the model." width="800" height="350">
+<img src="Impulse.jpeg" alt="Figure 1 - Creating an impulse with the workflow..1.Collecting Data; 2.Preprocessing the data; 3.Designing the Neural Network; 4.Training the model." width="800" height="350">
 
 Figure 1 - Creating an impulse with the workflow… 1.Collecting Data; 2.Preprocessing the data; 3.Designing the Neural Network; 4.Training the model.
   
@@ -240,11 +240,14 @@ Figure 4 - Results on Validation Set of Fall Data.
 Figure 5 - Example Data of Stand(Scaled from -60 to 60)  versus Fall (Scaled from -2000 to 2000 with a lot of movement in gyrX, gyrY, and gryZ).
 
   Then I exported my model from online edge impulse by building my firmware and selecting Arduino Nano 33 BLE Microcontroller as my board. This will export the impulse, and build a binary that will run on your development board in a single step. Then I flashed the software and tested my Fall Detector in real time (**See Figure 6**).
-```
+
+<details>
+<summary>
 Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
 #Classification results:
     Fall: 0.007813
     Stand: 0.992187
+</summary>
 Starting inferencing in 2 seconds...
 Sampling...
 Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
@@ -347,7 +350,6 @@ Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.):
 #Classification results:
     Fall: 0.042969
     Stand: 0.957031
-```
 
 Figure 6 - Fall Detector Tested in Real Time.
   
@@ -357,7 +359,7 @@ Figure 6 - Fall Detector Tested in Real Time.
   **1.** Install the Arduino-cli. When I was doing this, my computer ran into a lot of issues. My computer did not have admin permissions, and the initial account/user did not have user permissions. 
   **2.** So, I created a new profile with admin permissions and redid the whole process to see if it would work. While doing this, I ran into some issues with Homebrew. So I decided to install the brew library onto my laptop. 
   **3.** Soon after, I ran into an issue with the Arduino-cli. It had failed to install because the newest version,the version I had installed, was unstable on my mac.
-  **4.** So, I uninstalled this unstable version, and reinstalled Arduino version 0.35 and repeated the process all over again. I decided to add “/Users/Sruthi/bin” to my $PATH as I kept on getting a $PATH error. A $PATH is an executable variable that tells the bash shell where to find different executable files and scripts.
+  **4.** So, I uninstalled this unstable version, and reinstalled Arduino version 0.35 and repeated the process all over again. I decided to add “/Users/Sruthi/bin” to my $PATH as I kept on getting a $PATH error. A $PATH is an environment variable that tells the bash shell where to find different executable files and scripts.
   **5.** But soon after, there was an error with the BASH on my computer. Bash scripts are files containing code that tell the computer to do something. And since there was some error with my computer’s bash, I had to change it manually.
   **6.** So, I manually edited the bash and then saved it. After all this, I ran the program all over again. Then I used the “ls”, “cd”, and “sudo” commands to navigate to the folder where the Arduino firmware was. 
   **7.** Now, I tried to flash the command “./flash_mac_test.sh”. It finally flashed the software and asked for my username and password for my edge impulse account. 
