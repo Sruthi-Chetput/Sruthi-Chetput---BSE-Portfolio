@@ -240,6 +240,7 @@ Figure 4 - Results on Validation Set of Fall Data.
 Figure 5 - Example Data of Stand(Scaled from -60 to 60)  versus Fall (Scaled from -2000 to 2000 with a lot of movement in gyrX, gyrY, and gryZ).
 
   Then I exported my model from online edge impulse by building my firmware and selecting Arduino Nano 33 BLE Microcontroller as my board. This will export the impulse, and build a binary that will run on your development board in a single step. Then I flashed the software and tested my Fall Detector in real time (**See Figure 6**).
+  
 <details>
 <summary>
 Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
@@ -247,6 +248,7 @@ Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.):
     Fall: 0.007813
     Stand: 0.992187
 </summary>
+  
 ```cpp
 Starting inferencing in 2 seconds...
 Sampling...
@@ -351,6 +353,7 @@ Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.):
     Fall: 0.042969
     Stand: 0.957031
 </details>
+
 ```
 Figure 6 - Fall Detector Tested in Real Time.
   
