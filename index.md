@@ -15,7 +15,7 @@ The fall detector has a small TinyML, a machine learning device in charge of det
   
 **Machine Learning**
 
-  The first step in my third milestone was to retrain my model. I did this by adding 240 sec of more data. I wanted to do this since I realized that my model would sometimes detect a fall even though I was not falling. Therefore, I went to Edge Impulse to retrain my model, built the Arduino library by deploying my model, and added the library to Arduino IDE (**See Figure 1**).
+  The first step in my third milestone was to retrain my model. I did this by adding 240 seconds of more data. I wanted to do this since I realized that my model would sometimes detect a fall even though I was not falling. Therefore, I went to Edge Impulse to retrain my model, built the Arduino library by deploying my model, and added the library to Arduino IDE (**See Figure 1**).
 
 <img src="Re-Train-model.png" alt="Figure 1 - Retraining my ML model using Edge-Impulse and building the Arduino Library." width="950" height="550">
 
@@ -65,9 +65,9 @@ Figure 6 - Arduino tightly placed inside the 3D printed case using foam.
 
   After this, I tested my project a few more times to check if everything worked properly. When standing, sitting, or walking, the light would be green. But whenever I fall hard or soft, on the floor or the chair, it doesn’t matter. My Fall Detector can detect that as a fall and change the LED light from Green to Red. From this, I know that my Fall Detector is working accurately!
 
-  Overall, throught my time at Bluestamp I learned many things. My project requires me to use Machine Learning via Edge Impulse and an Arduino Nano 33 BLE Sense along with Arduino IDE. Before Bluestamp, I did not know what any of these things were. But throught my time here, I learned how to connect an Arduino Nano to my laptop, how to create a machine learning model using edge impulse, and how to program code using Arduino. I learned about the difffrent accelerometer values used in my project, the inbuilt LED light, and how to use the command line interface too. I hope to use these skills in the future to create something new that will help make people’s lives easier.
+  Overall, throughout my time at Bluestamp I learned many things. My project requires me to use Machine Learning via Edge Impulse and an Arduino Nano 33 BLE Sense along with Arduino IDE. Before Bluestamp, I did not know what any of these things were. But throught my time here, I learned how to connect an Arduino Nano to my laptop, how to create a machine learning model using edge impulse, and how to program code using Arduino. I learned about the difffrent accelerometer values used in my project, the inbuilt LED light, and how to use the command line interface too. I hope to use these skills in the future to create something new that will help make people’s lives easier.
 
-  One thing I liked about Bluestamp was that I was not only able to work my project, but I was able to help my peers with there projects as well. I liked how we would take breaks and jst forget about the problems we had in our project. During hte breaks we would bond with other students and enjoy our break time. This really taught me to work while I work and play when I play. I learned a lot of things from other projects that I could use in mine such as how to balance the training set of the data I collected. I also learned how to use the terminal with the command line(cd) and list(ls) commands. Before coming to Bluestamp, I did not know how to do alot of these things but after my time here, I know how to do so many. Bluestamp has really helped me improve my skillsets that I need in my life.
+  One thing I liked about Bluestamp was that I was not only able to work my project, but I was able to help my peers with there projects as well. I liked how we would take breaks and just forget about the problems we had in our projects. During the breaks we would bond with other students and enjoy our break time. This really taught me to work while I work and play when I play. I learned a lot of things from other projects that I could use in mine such as how to balance the training set of the data I collected. I also learned how to use the unix based terminals and found two important commands such as change directory and list commands. Before coming to Bluestamp, I did not know how to do alot of these things but after my time here, I know how to do so many. Bluestamp has really helped me improve my skillsets that I need in my life.
 
 # Second Milestone: LED Light incorporated with Fall Detector with Schematics
 
@@ -358,7 +358,7 @@ Figure 6 - Fall Detector Tested in Real Time.
   **1.** Install the Arduino-cli. When I was doing this, my computer ran into a lot of issues. My computer did not have admin permissions, and the initial account/user did not have user permissions. 
   **2.** So, I created a new profile with admin permissions and redid the whole process to see if it would work. While doing this, I ran into some issues with Homebrew. So I decided to install the brew library onto my laptop. 
   **3.** Soon after, I ran into an issue with the Arduino-cli. It had failed to install because the newest version,the version I had installed, was unstable on my mac.
-  **4.** So, I uninstalled this unstable version, and reinstalled Arduino version 0.35 and repeated the process all over again. I decided to add “/Users/Sruthi/bin” to my PATH as I kept on getting a PATH error. 
+  **4.** So, I uninstalled this unstable version, and reinstalled Arduino version 0.35 and repeated the process all over again. I decided to add “/Users/Sruthi/bin” to my PATH as I kept on getting a PATH error. A PATH is a variable that tells the bash shell where to find diffrent executable files and scripts.
   **5.** But soon after, there was an error with the BASH on my computer. Bash scripts are files containing code that tell the computer to do something. And since there was some error with my computer’s bash, I had to change it manually.
   **6.** So, I manually edited the bash and then saved it. After all this, I ran the program all over again. Then I used the “ls”, “cd”, and “sudo” commands to navigate to the folder where the Arduino firmware was. 
   **7.** Now, I tried to flash the command “./flash_mac_test.sh”. It finally flashed the software and asked for my username and password for my edge impulse account. 
@@ -367,14 +367,6 @@ Figure 6 - Fall Detector Tested in Real Time.
 
   I look forward to the next portion of my project!
 
-<!--
- # Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
-
--->
 # Starter Project with Schematics
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RBPeF8CwQ9M?si=p3Z9HswpC9CesJ2L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
