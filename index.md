@@ -250,6 +250,7 @@ Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.):
 </mark></summary>
   
 ```cpp
+
 Starting inferencing in 2 seconds...
 Sampling...
 Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
@@ -352,6 +353,7 @@ Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.):
 #Classification results:
     Fall: 0.042969
     Stand: 0.957031
+
 ```
 
 </details>
