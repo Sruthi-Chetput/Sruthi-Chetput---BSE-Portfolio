@@ -352,9 +352,10 @@ Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.):
 #Classification results:
     Fall: 0.042969
     Stand: 0.957031
-</details>
 ```
 Figure 6 - Fall Detector Tested in Real Time.
+
+</details>
   
   Before flashing the software, I had to use “cd” (changes the directory) and “ls ”(gives the ordered list of filenames in a directory file) commands to navigate to the correct folder which contained the software to flash. In order for the software to run/flash properly, I had to put “sudo”(super user do) in front of the command, “./flash_mac_command”. Once it was flashing the software properly, I was finally able to run edge-impulse-run-impulse.
 
