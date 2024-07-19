@@ -1,5 +1,5 @@
 # Fall Detector
-The fall detector has a small TinyML, a machine learning device in charge of detecting falls via the onboard accelerometer data. Only when a Fall occurs, the inbuilt LED light will turn Red. When a Fall has not occured, the inbuilt LED light will stay at a green color. I choose to work on this project because my grandma has a medical condition where she falls when she suddenly hears a noise or when someome passes her unexpecedly. I created this fall detector to help her!
+The fall detector has a small TinyML, a machine learning device in charge of detecting falls via the onboard accelerometer data. Only when a Fall occurs, the inbuilt LED light will turn Red. When a Fall has not occurred, the inbuilt LED light will stay at a green color. I choose to work on this project because my grandma has a medical condition where she falls when she suddenly hears a noise or when someone passes her unexpectedly. I created this fall detector to help her!
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -65,9 +65,9 @@ Figure 6 - Arduino tightly placed inside the 3D printed case using foam.
 
   After this, I tested my project a few more times to check if everything worked properly. When standing, sitting, or walking, the light would be green. But whenever I fall hard or soft, on the floor or the chair, it doesn’t matter. My Fall Detector can detect that as a fall and change the LED light from Green to Red. From this, I know that my Fall Detector is working accurately!
 
-  Overall, throughout my time at Bluestamp I learned many things. My project requires me to use Machine Learning via Edge Impulse and an Arduino Nano 33 BLE Sense along with Arduino IDE. Before Bluestamp, I did not know what any of these things were. But throught my time here, I learned how to connect an Arduino Nano to my laptop, how to create a machine learning model using edge impulse, and how to program code using Arduino. I learned about the difffrent accelerometer values used in my project, the inbuilt LED light, and how to use the command line interface too. I hope to use these skills in the future to create something new that will help make people’s lives easier.
+  Overall, throughout my time at Bluestamp I learned many things. My project requires me to use Machine Learning via Edge Impulse and an Arduino Nano 33 BLE Sense along with Arduino IDE. Before Bluestamp, I did not know what any of these things were. But throught my time here, I learned how to connect an Arduino Nano to my laptop, how to create a machine learning model using edge impulse, and how to program code using Arduino. I learned about the different accelerometer values used in my project, the inbuilt LED light, and how to use the command line interface too. I hope to use these skills in the future to create something new that will help make people’s lives easier.
 
-  One thing I liked about Bluestamp was that I was not only able to work my project, but I was able to help my peers with there projects as well. I liked how we would take breaks and just forget about the problems we had in our projects. During the breaks we would bond with other students and enjoy our break time. This really taught me to work while I work and play when I play. I learned a lot of things from other projects that I could use in mine such as how to balance the training set of the data I collected. I also learned how to use the unix based terminals and found two important commands such as change directory and list commands. Before coming to Bluestamp, I did not know how to do alot of these things but after my time here, I know how to do so many. Bluestamp has really helped me improve my skillsets that I need in my life.
+  One thing I liked about Bluestamp was that I was not only able to work on my project, but I was able to help my peers with their projects as well. I liked how we would take breaks and just forget about the problems we had in our projects. During the breaks we would bond with other students and enjoy our break time. This really taught me to work while I work and play when I play. I learned a lot of things from other projects that I could use in mine such as how to balance the training set of the data I collected. I also learned how to use the unix based terminals and found two important commands such as change directory and list commands. Before coming to Bluestamp, I did not know how to do a lot of these things but after my time here, I know how to do so many. Bluestamp has really helped me improve my skill sets that I need in my life.
 
 # Second Milestone: LED Light incorporated with Fall Detector with Schematics
 
@@ -87,12 +87,12 @@ Figure 2 -  Complex Flowchart of Milestone 1.
 
 Figure 3 -  Complex Flowchart of Milestone 2.
 
-  I added functionality of Green when Standing and Red when Falling. To do this, I had to:
+  I added the functionality of Green when Standing and Red when Falling. To do this, I had to:
 **1.** Go to edge-impulse and deploy my project. 
 **2.** Convert it into a ZIP.file and add the ZIP.file as a Library to the Arduino IDE. 
 **3.** Now, I tested my project in Arduino and it worked. I made my project run only on the Arduino device instead of running in the terminal.
 
-  I also made the Builtin LED light up in my second Milestone so user can visually detect falls. Red light corresponds to a “Fall”. Green light corresponds to a “Stand”. In order to do this, I had to:
+  I also made the Builtin LED light up in my second Milestone so the user can visually detect falls. Red light corresponds to a “Fall”. Green light corresponds to a “Stand”. In order to do this, I had to:
 **1.** Using the ML model I trained from edge impulse, I had two classes: “Fall” and “Stand”
 **2.** I used an “if” condition to check if a “Fall” or “Stand” occurRed.
 **3.** If the class name was “Fall” and only if the chance of falling is 50% or higher, I made the LED light turn Red(**See Figure 4**).
@@ -110,7 +110,7 @@ Figure 4 - Arduino Nano 33 BLE Sense Board Inbuilt LED lights up Red after detec
 
 **6.** All this code was in a loop so it will keep on repeating.
 
-  Some challenges popped up when I was trying to compile the Arduino code. An error would occur but it would not highlight any problemns in the code. I later on realized I have an Arduino Nano 33 BLE Sense but I was running the program for an Arduino Nano 33 BLE Sense Rev2. So when I changed and ran my code on the program compatible with my board, it worked without any errors. However, another error would occur stating that the board was not connected to the port when it clearly was. So then I decided to unplug the wires and flip it over. Then I compiled the code again and it worked! But everytime I try to compile the code, It would take a long time for it to compile and upload and finally execute my code. So, when I fixed my code to run without any errors. I would compile it multiple times to make the speed of compiling faster. This helped because now when I want to compile the code it takes up a much shorter time than before. 
+  Some challenges popped up when I was trying to compile the Arduino code. An error would occur but it would not highlight any problems in the code. I later on realized I have an Arduino Nano 33 BLE Sense but I was running the program for an Arduino Nano 33 BLE Sense Rev2. So when I changed and ran my code on the program compatible with my board, it worked without any errors. However, another error would occur stating that the board was not connected to the port when it clearly was. So then I decided to unplug the wires and flip it over. Then I compiled the code again and it worked! But everytime I try to compile the code, It would take a long time for it to compile and upload and finally execute my code. So, when I fixed my code to run without any errors. I would compile it multiple times to make the speed of compiling faster. This helped because now when I want to compile the code it takes up a much shorter time than before. 
   
   I am very excited to put all the parts together and finally make it wearable in my third Milestone!
 
@@ -352,13 +352,13 @@ Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.):
 
 Figure 6 - Fall Detector Tested in Real Time.
   
-  Before flashing the software, I had to use “cd” (changes the directory) and “ls ”(gives the ordered list of files names in a directory file) commands to navigate to the correct folder which contained the software to flash. In order for the software to run/flash properly, I had to put “sudo”(super user do) in front of the command, “./flash_mac_command”. Once it was flashing the software properly, I was finally able to run edge-impulse-run-impulse.
+  Before flashing the software, I had to use “cd” (changes the directory) and “ls ”(gives the ordered list of filenames in a directory file) commands to navigate to the correct folder which contained the software to flash. In order for the software to run/flash properly, I had to put “sudo”(super user do) in front of the command, “./flash_mac_command”. Once it was flashing the software properly, I was finally able to run edge-impulse-run-impulse.
 
   But before being able to create my Model, I first had to connect my Arduino board to my laptop through edge impulse. But before I could do this, I had to...
   **1.** Install the Arduino-cli. When I was doing this, my computer ran into a lot of issues. My computer did not have admin permissions, and the initial account/user did not have user permissions. 
   **2.** So, I created a new profile with admin permissions and redid the whole process to see if it would work. While doing this, I ran into some issues with Homebrew. So I decided to install the brew library onto my laptop. 
   **3.** Soon after, I ran into an issue with the Arduino-cli. It had failed to install because the newest version,the version I had installed, was unstable on my mac.
-  **4.** So, I uninstalled this unstable version, and reinstalled Arduino version 0.35 and repeated the process all over again. I decided to add “/Users/Sruthi/bin” to my $PATH as I kept on getting a $PATH error. A $PATH is a executable variable that tells the bash shell where to find diffrent executable files and scripts.
+  **4.** So, I uninstalled this unstable version, and reinstalled Arduino version 0.35 and repeated the process all over again. I decided to add “/Users/Sruthi/bin” to my $PATH as I kept on getting a $PATH error. A $PATH is an executable variable that tells the bash shell where to find different executable files and scripts.
   **5.** But soon after, there was an error with the BASH on my computer. Bash scripts are files containing code that tell the computer to do something. And since there was some error with my computer’s bash, I had to change it manually.
   **6.** So, I manually edited the bash and then saved it. After all this, I ran the program all over again. Then I used the “ls”, “cd”, and “sudo” commands to navigate to the folder where the Arduino firmware was. 
   **7.** Now, I tried to flash the command “./flash_mac_test.sh”. It finally flashed the software and asked for my username and password for my edge impulse account. 
@@ -373,17 +373,17 @@ Figure 6 - Fall Detector Tested in Real Time.
 
   Hi, I am Sruthi. I did the Bluestamp Arduino Starter Project. There are two parts to my project, the input which is the photocell, and the output which is the LED light. The photocell is a sensor that can assist you to detect simple light ranges. In my project, I have used the photocell to sense if light is being blocked. If you are blocking the light by placing your finger on top of the photocell, then the LED light will light up. 
   
-  Photocells are resistors that change its resistive value (in ohms Ω) depending on how much light is shining onto the squiggly face(**See Figure 1**). Each photocell sensor will act a little differently than the other, even if they are from the same batch. So you can expect to only be able to determine basic light changes. As I have mentioned before, photocell's resistance changes as the face is exposed to more light. When it is dark, the sensor looks like an large resistor up to 10MΩ(mega ohms), as the light level increases, the resistance goes down to a couple hundred. That’s why in my project, I have used the photo cell to sense if any light is being blocked.
+  Photocells are resistors that change its resistive value (in ohms Ω) depending on how much light is shining onto the squiggly face(**See Figure 1**). Each photocell sensor will act a little differently than the other, even if they are from the same batch. So you can expect to only be able to determine basic light changes. As I have mentioned before, a photocell's resistance changes as the face is exposed to more light. When it is dark, the sensor looks like a large resistor up to 10MΩ(mega ohms), as the light level increases, the resistance goes down to a couple hundred. That’s why in my project, I have used the photocell to sense if any light is being blocked.
 
 <img src="light_photocell-diagram.png" alt="Figure 1 - Diagram of a photocell with labels." width="450" height="300">
 
 Figure 1 - Parts of a Photocell.
   
-  In my project, I wanted to light an external LED using the photocell. To do this, I connected one end of the resistor to the digital pin correspondent to the LED_BUILTIN constant. Then, I connected the positive(longer) leg of the LED to the other end of the resistor. I also connected the negative(shorter) leg of the LED to the GND(**See Figure 2**).
+  In my project, I wanted to light an external LED using the photocell. To do this, I connected one end of the resistor to the digital pin corresponding to the LED_BUILTIN constant. Then, I connected the positive(longer) leg of the LED to the other end of the resistor. I also connected the negative(shorter) leg of the LED to the GND(**See Figure 2**).
 
-<img src="Circut_of_LED_connection.png" alt="Figure 2 - Diagram of a circut with LED connection." width="550" height="300">
+<img src="Circut_of_LED_connection.png" alt="Figure 2 - Diagram of a circuit with LED connection." width="550" height="300">
 
-Figure 2 - Circut of an LED connection.
+Figure 2 - Circuit of an LED connection.
   
   I wanted to program the LED to only light up when your finger touches the photosensor. To do this, I got the average value of the photocell when your finger is touching it. Then I created a condition. Only when the photocell reading is less than average value of the photocell reading, the LED will light up.
   
