@@ -248,9 +248,7 @@ Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.):
     Fall: 0.007813
     Stand: 0.992187
 </mark></summary>
-  
-```cpp
-
+<span style="background-color: #ffd1dc;">highlighted</span>
 Starting inferencing in 2 seconds...
 Sampling...
 Predictions (DSP: 54 ms., Classification: 0 ms., Anomaly: 0 ms.): 
