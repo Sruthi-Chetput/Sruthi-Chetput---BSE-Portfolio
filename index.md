@@ -1,10 +1,6 @@
 # Fall Detector
 The fall detector has a small TinyML, a machine learning device in charge of detecting falls via the onboard accelerometer data. Only when a Fall occurs, the inbuilt LED light will turn Red. When a Fall has not occured, the inbuilt LED light will stay at a green color. I choose to work on this project because my grandma has a medical condition where she falls when she suddenly hears a noise or when someome passes her unexpecedly. I created this fall detector to help her!
 
-<!---
-[Edit the paragraph above to make it better with this prompt] Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions-->
-
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Sruthi C | Lynbrook High School | Engineering | Incoming Sophomore |
@@ -15,7 +11,7 @@ You should comment out all portions of your portfolio that you have not complete
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hj8J3zDPKIc?si=5vd0iITn1NmihyBR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  I completed the third milestone of my Main Project, The Fall Detector! For my third milestone, I retrained my model so it would be very accurate in detecting falls and also made my entire device fully wearable! I wear the Arduino Nano in the 3D printed case with a velcro strapped attached to my waist. This was a mechanical engineering and machile learning oriented milestone. To summarize my project, in my first milestone, I flashed the software on the terminal and tested my Fall Detector through the Arduino IDE. For my second milestone, I built upon my system so my model would be able to run directly on the Arduino instead of the Terminal and furthermore, the inbuilt LED would turn red or green based on the detection of a fall or a stand. Putting this all together in my final milestone, I tested to see if my Fall Detector was working and it worked!
+  I completed the third milestone of my Main Project, The Fall Detector! For my third milestone, I retrained my model so it would be very accurate in detecting falls and also made my entire device fully wearable! I wear the Arduino Nano in the 3D printed case with a velcro strapped attached to my waist. This was a mechanical engineering and machine learning oriented milestone. To summarize my project, in my first milestone, I flashed the software on the terminal and tested my Fall Detector through the Arduino IDE. For my second milestone, I built upon my system so my model would be able to run directly on the Arduino instead of the Terminal and furthermore, the inbuilt LED would turn red or green based on the detection of a fall or a stand. Putting this all together in my final milestone, I tested to see if my Fall Detector was working and it worked!
   
 **Machine Learning**
 
@@ -43,7 +39,7 @@ Figure 3 - 3D printed case with straps attached and circular hole that is not bi
     **1.** I could cut the wire and insert it inside the hole. Then I could solder it back together.
     **2.** I could make a bigger hole using the dremel and just insert the wire inside of this new hole.
     
-	The first idea would take a long time and I would need to put in way more effort. However, the second idea would be a bit dangerous as I would use the Dremel tool. Yet, it would still be easier and take way less time than the first idea. Therefore, I went to execute my second idea. 
+The first idea would take a long time and I would need to put in way more effort. However, the second idea would be a bit dangerous as I would use the Dremel tool. Yet, it would still be easier and take way less time than the first idea. Therefore, I went to execute my second idea. 
 
   While using the Dremel I had to wear heavy gloves and safety glasses. The Dremel is a tool that uses a rotating tip. Since I was drilling a hole into a plastic 3D printed part, I had to be extremely careful not to melt the plastic all over the 3D printed part. I had to practice using the dremel at one of its highest speeds on wood first, using it for a few seconds at a time. Once I got the hang of this, I was able to create an oval shaped hole in my 3D printed part (**See Figure 4**).
 
