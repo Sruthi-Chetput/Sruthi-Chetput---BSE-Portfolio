@@ -387,7 +387,7 @@ Figure 2 - Circuit of an LED connection.
   I wanted to program the LED to only light up when your finger touches the photosensor. To do this, I got the average value of the photocell when your finger is touching it. Then I created a condition. Only when the photocell reading is less than average value of the photocell reading, the LED will light up.
   
 # Code 
-```
+```cpp
 int photocellPin = 0;     
 int photocellReading;    
 int LEDpin = 11;          
